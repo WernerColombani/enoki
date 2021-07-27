@@ -1,0 +1,623 @@
+@media screen and (min-width: 1024px) {
+    /* importation police montserrat */
+
+
+
+/* bases */
+
+@font-face{
+    font-family: Montserrat_bold;
+    src : url('font/Montserrat/Montserrat-Black.ttf') format('truetype');
+
+}
+@font-face{
+    font-family: Montserrat_semibold;
+    src : url('font/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+}
+@font-face{
+    font-family: Montserrat ;
+    src : url('font/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat_bold', sans-serif;
+}
+
+.main,
+.presentation,
+.bloc_presentation,
+.diaporama,
+.bloc_diaporama,
+.column,
+.arrow_left,
+.arrow_right,
+.label_diaporama_one,
+.label_diaporama_two,
+.label_diaporama_three,
+.bloc_button,
+.news,
+.news_img,
+.news_img_deux {
+    display: flex;
+}
+
+/* header */
+.header{
+    position: relative;
+    height: 100vh;
+    background: url('images/6.png') no-repeat center ;
+    background-size:cover;
+    margin: auto;
+}
+
+.titre_principal {
+    color:white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+}
+
+.scroll {
+    color: white;
+    font-weight: bold;
+    position:absolute;
+    bottom: 7%;
+    left: 47.6%;
+    width: 3vw;
+}
+.scroll:hover{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #FFF;
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+/*bloq climbers*/
+
+.title_bloc_climbers{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    color: #285D81;
+    font-size: 35px;
+
+}
+
+.main {
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation,
+.bloc_presentation {
+    flex-direction: column;
+    align-items: center;
+}
+
+.diaporama {
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bloc_diaporama {
+    list-style: none;
+    align-items: center;
+}
+
+.onglet_diapo.visible {
+    display: flex;
+    animation: diapo .5s;
+  }
+
+.paragraphe_presentation {
+    color:#285D81;
+    text-align: center;
+    width: 50%;
+    line-height: 200%;
+    font-family: 'Montserrat';
+}
+.sublabel_diapo{
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.arrow_left,
+.arrow_right  {
+    transform: translateY(-25px);
+    height: 20%;
+}
+
+
+.column {
+    height: 300px;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #285D81;
+}
+
+.img_diaporama_presentation_one,
+.img_diaporama_presentation_two,
+.img_diaporama_presentation_three {
+    width: 300px;
+    height: 200px;
+}
+
+.label_diaporama_one,
+.label_diaporama_two,
+.label_diaporama_three {
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 60px;
+    transform: translateY(-30px);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.324);
+}
+
+#btn1 {
+    background-color:#9AF2D3; 
+    border: none;
+    color: #285D81;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    height: 60px;
+    width: 250px;
+    margin-bottom: 100px;
+  }
+
+/* bloc news */
+
+.part{
+    height: 150vh;
+    background-color:#2580BC;
+}
+
+.back {
+	background: url('images/6.png') no-repeat center ;
+	width: 40vw;
+	height: 70vh; 
+    margin: auto;
+    position:relative;
+    top:200px;
+}
+
+.bloc_part {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    left: 35.5%;
+    margin-top: 60px;
+}
+
+.title_part_climbers{
+    font-size: 40px;
+}
+
+.paragraphe_part{
+    font-family: 'Monserrat';
+    margin-top: 20px;
+}
+.base {
+	
+	width: 35vw;
+	height: 80vh;
+    margin: auto;
+    position:relative;
+    top: -30px;
+    left: 1px;
+	background-color: white;
+	mix-blend-mode: hard-light;
+}
+
+.hole {
+	width: 30vw;
+	height: 50vh;
+	margin: auto;
+    position:relative;
+    top:80px;
+	background-color: gray;
+} 
+
+.titre_frame{
+    color: #2580BC;
+    top: 40px;
+    left: 35px;
+    position: relative;
+}
+
+.p_frame{
+    color: black;
+    top: 85px;
+    left: 32px;
+    position: relative;
+    width: 28vw;
+    line-height: 150%;
+    
+}
+
+#btn2 {
+    background-color:white; 
+    border: none;
+    color: #285D81;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: auto;
+    cursor: pointer;
+    top: 80px;
+    height: 60px;
+    width: 250px;
+    left: 160px;
+    position: relative;
+  }
+
+footer{
+    margin-top: 100px;
+    text-align: center;
+    color:#285D81;
+    font-size: 30px;
+    font-family: 'Montserrat_semibold';
+    margin-bottom: 20px;
+}
+hr {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    height: 5px;
+    background-color: #285D81;
+}
+
+/* Couleurs */
+.vert{
+    color:#9AF2D3;
+}
+
+.bleu{
+    color:#2580BC;
+}
+
+
+/* Keyframes */
+
+@keyframes diapo {
+    from {
+      opacity: 0;
+    } to {
+      opacity: 1;
+    }
+  }
+  
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    /* importation police montserrat */
+
+
+
+/* bases */
+
+@font-face{
+    font-family: Montserrat_bold;
+    src : url('font/Montserrat/Montserrat-Black.ttf') format('truetype');
+
+}
+@font-face{
+    font-family: Montserrat_semibold;
+    src : url('font/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+}
+@font-face{
+    font-family: Montserrat ;
+    src : url('font/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main,
+.presentation,
+.bloc_presentation,
+.diaporama,
+.bloc_diaporama,
+.column,
+.arrow_left,
+.arrow_right,
+.label_diaporama_one,
+.label_diaporama_two,
+.label_diaporama_three,
+.bloc_button,
+.news,
+.news_img,
+.news_img_deux {
+    display: flex;
+}
+
+/* header */
+.header{
+
+    height: 100vh;
+    width: 100%;
+    background: url('images/6.png') no-repeat center ;
+    background-size:cover;
+}
+
+.titre_principal {
+    color:white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.scroll {
+    color: white;
+    font-weight: bold;
+    position:absolute;
+    bottom: 7%;
+    left: 47.6%;
+    width: 3vw;
+}
+
+/*bloq climbers*/
+
+.title_bloc_climbers{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    color: #285D81;
+    font-weight: bolder;
+
+}
+
+.main {
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation,
+.bloc_presentation {
+    flex-direction: column;
+    align-items: center;
+}
+
+.diaporama {
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bloc_diaporama {
+    list-style: none;
+    align-items: center;
+}
+
+.onglet_diapo, .column {
+    display: none;
+}
+
+
+.onglet_diapo.visible {
+    display: flex;
+    animation: diapo .5s;
+  }
+
+.paragraphe_presentation {
+    text-align: center;
+    width: 50%;
+    line-height: 200%;
+    font-family: 'Montserrat_semibold';
+    color:#285D81;
+}
+.sublabel_diapo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    color:#285D81;
+    
+}
+
+.arrow_left,
+.arrow_right  {
+    transform: translateY(-25px);
+    height: 20%;
+}
+
+
+.column {
+    height: 300px;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_diaporama_presentation_one,
+.img_diaporama_presentation_two,
+.img_diaporama_presentation_three {
+    width: 300px;
+    height: 200px;
+}
+
+.label_diaporama_one,
+.label_diaporama_two,
+.label_diaporama_three {
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 60px;
+    transform: translateY(-30px);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.324);
+}
+
+#btn1 {
+    background-color:#9AF2D3; 
+    border: none;
+    color: #285D81;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12x;
+    cursor: pointer;
+    height: 50px;
+    margin-bottom: 60px;
+  }
+
+/* bloc news */
+
+.part{
+    height: 80vh;
+    background-color:#2580BC;
+}
+
+.back {
+	background: url('images/6.png') no-repeat center ;
+	width: 80vw;
+	height: 40vh; 
+    margin: auto;
+    position:relative;
+    top:120px;
+    
+
+}
+
+.bloc_part {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+    color: white;
+    position: absolute;
+    left: 10.5%;
+}
+
+
+.base {
+	
+	width: 70vw;
+	height: 50vh;
+    margin: auto;
+    position:relative;
+    top:-30px;
+    left: 1px;
+	background-color: white;
+	mix-blend-mode: hard-light;
+}
+
+.hole {
+	width: 60vw;
+	height: 35vh;
+	margin: auto;
+    position:relative;
+    top:20px;
+	background-color: gray;
+} 
+
+.titre_frame{
+    color: #2580BC;
+    top: 10px;
+    left: 50px;
+    font-size: 80%;
+    position: relative;
+}
+
+.p_frame{
+    color: grey;
+    top: 45px;
+    left: 20px;
+    position: relative;
+    width: 40vw;
+    font-size: 50%;
+    line-height: 120%;
+}
+
+#btn2 {
+    background-color:white; 
+    border: none;
+    color: #285D81;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: auto;
+    cursor: pointer;
+    top: 30px;
+    left: 80px;
+    position: relative;
+  }
+footer{
+    margin-top: 20px;
+    text-align: center;
+    color:#285D81;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+hr {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: 5px;
+    background-color: #285D81;
+}
+
+
+/* Couleurs */
+.vert{
+    color:#9AF2D3;
+}
+
+.bleu{
+    color:#2580BC;
+}
+
+
+/* Keyframes */
+
+@keyframes diapo {
+    from {
+      opacity: 0;
+    } to {
+      opacity: 1;
+    }
+  }
+
+}
